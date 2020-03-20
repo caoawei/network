@@ -33,8 +33,9 @@ public class ServerChannel {
      */
     private ByteBuffer dataBuffer;
 
-    public ServerChannel(String connectionId) {
+    public ServerChannel(String connectionId,int processorId) {
         this.connectionId = connectionId;
+        this.processorId = processorId;
         this.byteSize = ByteBuffer.allocate(4);
     }
 
